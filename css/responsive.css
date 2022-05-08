@@ -1,0 +1,435 @@
+/* ************* Media Queries Tablets ****************** */
+@media only screen and (max-width: 1280px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .headLeft .menuWrap {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  .headLeft .callWrap {
+    width: 100%;
+  }
+  .headLeft .callWrap .callNow::before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1169px) {
+  .bannerWrap {
+    height: auto;
+    background-size: cover;
+    padding-bottom: 200px;
+  }
+  .bannerWrap .cols6 {
+    width: 100%;
+    text-align: center;
+  }
+  .contactUsBox .cols6 {
+    width: 50%;
+  }
+  .bannerCaption {
+    width: 50%;
+    padding-top: 120px;
+    margin: 0 auto;
+  }
+  .contactUsWrap {
+    padding-top: 30px;
+    justify-content: center;
+  }
+
+  .owl-theme .owl-controls .owl-nav {
+    display: none;
+  }
+  .testimonialsWrap .cols10 {
+    width: 100%;
+  }
+  .descriptions {
+    padding: 25px;
+  }
+  .descriptions .title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .descriptions p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .descriptions::before {
+    right: 30px;
+    top: 30px;
+    background-size: 60%;
+  }
+
+  .organizeEverythingWrap .cols4 {
+    width: 50%;
+  }
+  .organizeEverythingWrap .cols4.paraOne {
+    width: 100%;
+  }
+
+  .watchTheVideoWrap {
+    padding: 50px 0 650px;
+  }
+  .watchTheVideoWrap .cols6 {
+    width: 100%;
+  }
+  .boxbg::after {
+    display: none;
+  }
+
+  .boxbg::before {
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background: url(../images/mob-vertical-bg.png) no-repeat center bottom;
+    background-size: cover;
+    z-index: 2;
+  }
+
+  .videoImg::before {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    top: inherit;
+    background-position: center center;
+    z-index: 1;
+  }
+  .watchList {
+    width: 100%;
+  }
+  .popupVideo {
+    top: 100px;
+  }
+  .footerLogo {
+    z-index: 1;
+    right: auto;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .thankYouBanner .cols6 {
+    width: 100%;
+    text-align: center;
+  }
+  .thankYouInfo .cols6 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1023px) {
+}
+@media only screen and (max-width: 959px) {
+  .bannerCaption {
+    width: 80%;
+  }
+  .bannerWrap::after {
+    background-size: cover;
+    background-position: 0 0;
+  }
+  .weUnderstandWrap {
+    padding: 0 0 70px;
+  }
+  .weUnderstandBox .cols8,
+  .weUnderstandBox .cols4 {
+    width: 50%;
+  }
+  .weUnderstandBox .cols8 .cols6 {
+    width: 100%;
+  }
+  .servicesWrap .cols4 {
+    width: 50%;
+  }
+  .footer .cols6 {
+    width: 100%;
+    text-align: center;
+  }
+  .footerLinks ul {
+    justify-content: center;
+  }
+  .allRights {
+    margin-bottom: 10px;
+  }
+  .thankYouBanner {
+    height: auto;
+  }
+  .thankYouBanner .bannerCaption {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+/* ************* Mobiles Media Queries ****************** */
+@media only screen and (max-width: 767px) {
+  /*Navigation*/
+  #nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #1b4835;
+  }
+  #nav ul {
+    background: #1b4835;
+  }
+  .toggleMenu,
+  #nav .menuIcon {
+    display: flex;
+    padding: 2px 0 0;
+    justify-content: end;
+    align-content: center;
+  }
+  #nav li {
+    float: none;
+    display: block;
+    border: none;
+  }
+  #nav li a {
+    border-top: 1px solid #1b4030;
+  }
+  #nav li.parent {
+    position: relative;
+  }
+  #nav li .menuIcon,
+  #nav li li .menuIcon {
+    width: 46px;
+    height: auto;
+    background-color: #1b4030;
+    background-image: url(../images/down-arrow.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+  }
+  #nav li .menuIcon.active,
+  #nav li li .menuIcon.active {
+    background-color: #1b4030;
+  }
+  #nav li > a:hover,
+  #nav li.hover > a,
+  #nav li.active > a,
+  #nav li ul li a:hover,
+  #nav li ul li > a.selected,
+  #nav ul a:hover,
+  .noJS #nav ul a:focus,
+  #nav ul a.selected,
+  #nav > li > a:hover,
+  #nav > li.hover > a,
+  #nav > li.focus > a {
+    background-color: #002d63;
+    color: #fff;
+  }
+  #nav ul {
+    width: 100%;
+    display: none;
+    position: static;
+    transition: none;
+    -webkit-transition: none;
+  }
+  .hasJS #nav ul {
+    opacity: 1;
+  }
+  #nav li ul li,
+  #nav ul a {
+    width: 100%;
+  }
+  #nav > li:hover > ul,
+  #nav li li:hover > ul,
+  #nav li li li:hover > ul {
+    display: none;
+  }
+  #nav ul,
+  #nav *:hover ul ul,
+  #nav .hover ul ul,
+  #nav .focus ul ul {
+    margin-left: 0;
+  }
+  #nav li a {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+    line-height: 52px;
+    font-size: 15px;
+    text-align: left;
+  }
+  #nav li ul li a {
+    padding: 7px 55px 7px 25px;
+    display: block;
+    line-height: 21px;
+    background: url(../images/right-arrow.gif) no-repeat 15px 15px;
+    color: #fff;
+    border: none;
+  }
+  #nav li ul li ul li a {
+    padding-left: 45px;
+    background-position: 33px center;
+  }
+  #nav li ul li ul li ul li a {
+    padding-left: 60px;
+    background-position: 45px center;
+  }
+  #nav > li > a:hover,
+  #nav > li.hover > a,
+  #nav > li.focus > a,
+  #nav > .highlight > a {
+    background-color: #1b4030;
+    color: #fff;
+  }
+  #nav li ul li a:hover,
+  #nav li ul li > a.selected,
+  #nav ul a:hover,
+  .noJS #nav ul a:focus,
+  #nav ul a.selected,
+  #nav ul > .highlight > a {
+    background-color: #1b4030;
+    color: #fff;
+  }
+  #nav > li > a::before {
+    display: none;
+  }
+
+  .bannerWrap {
+    height: auto;
+    background-size: inherit;
+    padding-bottom: 200px;
+    background-position: top right;
+    background-color: #1b4835;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .headRight {
+    width: 66.66%;
+    z-index: 99999;
+  }
+  .headLeft {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    width: 100%;
+  }
+  .headLeft .callWrap {
+    display: none;
+  }
+  .bannerCaption {
+    width: 100%;
+    padding-top: 100px;
+  }
+  .bannerCaption p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .contactUsBox h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .contactUsBox .cols6 {
+    width: 100%;
+  }
+  .contactUsWrap .contactUsBox {
+    padding: 20px 20px;
+    width: 100%;
+  }
+  .button-group .button {
+    width: 100%;
+  }
+  .weUnderstandWrap .imagesGroup {
+    display: none;
+  }
+  .weUnderstandBox .cols8,
+  .weUnderstandBox .cols4 {
+    width: 100%;
+  }
+  .weUnderstandWrap p {
+    line-height: 24px;
+  }
+  .testimonialsWrap {
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+  .testimonialsBox {
+    position: relative;
+    flex-direction: column;
+  }
+  .thumbnail {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .descriptions {
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+  }
+  .owl-theme .owl-controls {
+    position: relative;
+    width: 100%;
+    top: inherit;
+    transform: inherit;
+  }
+  .owl-theme .owl-controls .owl-dots {
+    top: 25px;
+  }
+  .bordercover {
+    display: inline-block;
+  }
+  .organizeEverythingWrap .cols4 {
+    width: 100%;
+  }
+  .organizeEverythingWrap p {
+    margin-bottom: 20px;
+    line-height: 24px;
+  }
+  .servicesWrap .cols4 {
+    width: 100%;
+  }
+
+  .watchTheVideoWrap h2 {
+    font-size: 36px;
+    line-height: 48px;
+    align-items: inherit;
+    justify-content: inherit;
+    align-content: initial;
+    display: block;
+    text-align: center;
+  }
+  .watchList h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .watchList p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .allRights {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .footerLinks ul li a {
+    font-size: 12px;
+    padding: 0 10px;
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: 639px) {
+  #backtotop {
+    bottom: 100px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .boxbg::before {
+    height: 700px;
+  }
+}
+@media only screen and (max-width: 359px) {
+}
